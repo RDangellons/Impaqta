@@ -8,7 +8,7 @@ a {
   color: inherit;
 }
 
-/* Menú superior */
+/* NAV DESKTOP */
 .menu-top {
   display: flex;
   justify-content: space-between;
@@ -21,9 +21,7 @@ a {
   top: 0;
   z-index: 1000;
 }
-.menu-top .logo img {
-  height: 50px;
-}
+
 .menu-top nav ul {
   display: flex;
   list-style: none;
@@ -33,11 +31,51 @@ a {
   color: white;
   font-weight: 500;
 }
-.menu-top .redes img {
-  height: 20px;
-  margin-left: 10px;
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
 }
-  
+
+.menu-top .logo img {
+  height: 80px;
+}
+
+/* RESPONSIVE NAV */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+    width: 100%;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    background-color: #0d3b1f;
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: right;
+  }
+
+  #navbar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #1e4b30;
+  }
+
+  #navbar.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .redes {
+    display: none;
+  }
+}
+
 
 /* Hero */
 .hero {
@@ -127,6 +165,7 @@ a {
     font-size: 1rem;
   }
 
+  
   .btn-cta {
     font-size: 1rem;
     padding: 10px 20px;
@@ -139,6 +178,93 @@ a {
     right: 15px;
   }
 }
+
+
+
+/* ----------- SECCIÓN: ¿QUIÉNES SOMOS? ----------- */
+.about {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  color: #0d3b1f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.about-content p {
+  flex: 1 1 300px;
+  font-size: 1.1em;
+  color: #444;
+  text-align: justify;
+}
+.about-content img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* ----------- SECCIÓN: SERVICIOS ----------- */
+.services {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+}
+.services h2 {
+  text-align: center;
+  color: #0d3b1f;
+  margin-bottom: 30px;
+}
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background-color: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.card h3 {
+  color: #0d3b1f;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* ----------- SECCIÓN: VENTAJAS ----------- */
+.benefits {
+  background-color: #0d3b1f;
+  color: white;
+  padding: 60px 20px;
+}
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.benefits ul {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+.benefits li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
 
 @media (max-width: 480px) {
   .hero-content h1 {
