@@ -1,286 +1,94 @@
-/* Global */
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* NAV DESKTOP */
-.menu-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: green;
-  padding: 10px 30px;
-  color: white;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.menu-top nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-.menu-top nav a {
-  color: white;
-  font-weight: 500;
-}
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-.menu-top .logo img {
-  height: 80px;
-}
-
-/* RESPONSIVE NAV */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  #navbar {
-    display: none;
-    width: 100%;
-  }
-
-  #navbar ul {
-    flex-direction: column;
-    background-color: #0d3b1f;
-    margin-top: 10px;
-    padding: 10px 0;
-    text-align: right;
-  }
-
-  #navbar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #1e4b30;
-  }
-
-  #navbar.show {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .redes {
-    display: none;
-  }
-}
-
-
-/* Hero */
-.hero {
-  background: url('../Logos/Whats/fondo.jpg') center center / cover no-repeat;
+/* ----------- INICIO ESTILO APPLE ----------- */
+.hero-apple {
   height: 100vh;
+  background: url('../Logos/Whats/fondo.jpg') no-repeat center center/cover;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
-  padding: 0 20px;
+  overflow: hidden;
 }
-.hero-content h1 {
-  font-size: 3rem;
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero-apple h1 {
+  font-size: 2.2rem;
   font-weight: 700;
-}
-.hero-content p {
-  font-size: 1.4rem;
-  margin: 20px 0;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.btn-cta {
-  background-color: white;
-  color: #0d3b1f;
-  padding: 12px 25px;
-  border-radius: 5px;
-  font-weight: bold;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-.btn-cta:hover {
-  background-color: #e5e5e5;
-}
-
-/* Botón flotante WhatsApp */
-.btn-wsp {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 25px;
-  right: 25px;
-  background-color: #25D366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 30px;
-  z-index: 100;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-  transition: all 0.3s ease-in-out;
-}
-.btn-wsp img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.btn-wsp:hover {
-  transform: scale(1.1);
-}
-
-
-
-/* -------------------- RESPONSIVE -------------------- */
-@media (max-width: 768px) {
-  .menu-top {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .menu-top nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .menu-top .redes {
-    margin-top: 10px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  
-  .btn-cta {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .btn-wsp {
-    font-size: 0.85rem;
-    padding: 10px 16px;
-    bottom: 15px;
-    right: 15px;
-  }
-}
-
-
-
-/* ----------- SECCIÓN: ¿QUIÉNES SOMOS? ----------- */
-.about {
-  background-color: #ffffff;
-  padding: 60px 20px;
-}
-.about h2 {
-  font-family: 'Playfair Display', serif;
-  color: #0d3b1f;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.about-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-.about-content p {
-  flex: 1 1 300px;
-  font-size: 1.1em;
-  color: #444;
-  text-align: justify;
-}
-.about-content img {
-  flex: 1 1 300px;
-  max-width: 400px;
-  border-radius: 10px;
-}
-
-/* ----------- SECCIÓN: SERVICIOS ----------- */
-.services {
-  background-color: #f4f4f4;
-  padding: 60px 20px;
-}
-.services h2 {
-  text-align: center;
-  color: #0d3b1f;
-  margin-bottom: 30px;
-}
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.card {
-  background-color: white;
-  padding: 25px;
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.card h3 {
-  color: #0d3b1f;
   margin-bottom: 10px;
-}
-.card p {
-  color: #555;
-  font-size: 0.95em;
+  line-height: 1.2;
 }
 
-/* ----------- SECCIÓN: VENTAJAS ----------- */
-.benefits {
-  background-color: #0d3b1f;
-  color: white;
-  padding: 60px 20px;
+.hero-apple p, #typewriter-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  white-space: normal;  /* ← ESTE es clave */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding: 0 10px;
+  max-width: 100%;
 }
-.benefits h2 {
-  text-align: center;
+
+.hero-logo {
+  width: 100px;
   margin-bottom: 20px;
 }
-.benefits ul {
-  max-width: 600px;
-  margin: 0 auto;
-  list-style: none;
-  padding-left: 0;
+
+.btn-apple {
+  background-color: white;
+  color: #0d3b1f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
-.benefits li {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+.btn-apple:hover {
+  background-color: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+
+#typewriter-text {
+  border-right: 2px solid #fff;
+  animation: blink-caret 0.7s infinite;
+  display: inline-block;
+}
+
+/* Cursor animado */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
+}
+
+/* Efecto fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 
 @media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.8rem;
+  .hero-apple h1 {
+    font-size: 2.6rem;
   }
 
-  .hero-content p {
-    font-size: 0.9rem;
+  #typewriter-text {
+    font-size: 1.5rem;
   }
 
-  .menu-top nav ul {
-    font-size: 0.95rem;
-  }
-
-  .btn-wsp {
-    font-size: 0.75rem;
-    padding: 8px 14px;
+  .btn-apple {
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }

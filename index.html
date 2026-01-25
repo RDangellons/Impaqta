@@ -1,121 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IMPAQTA - Consultoría Ambiental</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+</head >
 <body>
 
-  <header class="menu-top">
-  <div class="logo">
-    <img src="Logos/PNG/Recurso 11.png" alt="Logo IMPAQTA">
-  </div>
+  <header class="navbar"  >
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html"><img src="./Logos/PNG/Recurso 6.png" alt="IMPAQTA" /></a>
+    </div>
 
-  <!-- Ícono hamburguesa -->
-  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="#quienes">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-  <!-- Navegación -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#">INICIO</a></li>
-      <li><a href="#quienes">¿QUIÉNES SOMOS?</a></li>
-      <li><a href="#servicios">SERVICIOS</a></li>
-      <li><a href="#contacto">CONTACTO</a></li>
-    </ul>
-  </nav>
-
-  <div class="redes">
-    <a href="#"><img src="img/fb.svg" alt="Facebook"></a>
-    <a href="#"><img src="img/ig.svg" alt="Instagram"></a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
   </div>
 </header>
 
+  <section class="hero-apple" id="inicio">
+  <div class="hero-overlay">
+    <img src="./Logos/PNG/Recurso 1.png" alt="IMPAQTA Logo" class="hero-logo">
+    <h1>Consultoría Ambiental de Alto Impacto</h1>
+ <! -- Texto animado-- >
+    <p id="typewriter-text"></p>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>IMPAQTA</h1>
-      <p>SOLUCIONES AMBIENTALES INTEGRALES<br>PARA PROYECTOS SOSTENIBLES</p>
-      <a href="#contacto" class="btn-cta">PRESENTACIÓN</a>
-    </div>
-  </section>
-
-<!-- ¿Quiénes somos? -->
-<section class="about" id="quienes">
-  <div class="container">
-    <h2>¿Quiénes somos?</h2>
-    <div class="about-content">
-      <p>
-        IMPAQTA es una firma mexicana especializada en consultoría e ingeniería ambiental.
-        Combinamos experiencia técnica, visión estratégica y compromiso con el desarrollo sostenible.
-        Transformamos la normatividad en soluciones rentables, legales y responsables con el entorno.
-      </p>
-      <img src="Logos/PERFIL/Sin título-1-13.jpg" alt="Consultoría Ambiental">
-    </div>
-  </div>
-</section>
-
-<!-- Servicios -->
-<section class="services" id="servicios">
-  <div class="container">
-    <h2>Servicios</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>MIA</h3>
-        <p>Manifestación de Impacto Ambiental para cumplir con normativas.</p>
-      </div>
-      <div class="card">
-        <h3>Estudios Hidrológicos</h3>
-        <p>Diagnóstico de cuencas, caudales y zonas de riesgo.</p>
-      </div>
-      <div class="card">
-        <h3>Ordenamiento Territorial</h3>
-        <p>Planeación del uso de suelo y prevención de conflictos.</p>
-      </div>
-      <div class="card">
-        <h3>Fotogrametría con Dron</h3>
-        <p>Modelos 3D y mapas digitales de alta precisión.</p>
-      </div>
-      <div class="card">
-        <h3>Reforestación</h3>
-        <p>Restauración ecológica con especies nativas.</p>
-      </div>
-      <div class="card">
-        <h3>Tratamiento de Aguas</h3>
-        <p>Asesoría técnica para plantas de tratamiento.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Ventajas -->
-<section class="benefits">
-  <div class="container">
-    <h2>¿Por qué elegir IMPAQTA?</h2>
-    <ul>
-      <li>✅ Cumplimiento legal asegurado</li>
-      <li>✅ Diagnósticos precisos y confiables</li>
-      <li>✅ Ahorro de tiempo y dinero en trámites</li>
-      <li>✅ Soluciones personalizadas por expertos</li>
-      <li>✅ Equipo multidisciplinario certificado</li>
-    </ul>
+    <a href="#contacto" class="btn-apple">Solicita tu asesoría</a>
   </div>
 </section>
 
 
+  <section class="mission">...</section>
 
+  <section class="portfolio">...</section>
 
+  <section class="contact" id="contacto">...</section>
 
- <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/527715261084?text=Hola%20me%20interesa%20una%20consultoría%20ambiental%20con%20IMPAQTA"
-     class="btn-wsp" target="_blank">
-    <img src="Logos/Whats/whats.png" alt="WhatsApp IMPAQTA" />
-  </a>
+  <footer>
 
+  </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/escriture.js"></script>
+  
 </body>
 </html>
