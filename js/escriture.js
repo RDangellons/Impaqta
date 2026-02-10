@@ -34,3 +34,33 @@ function escribir() {
 }
 
 window.addEventListener("load", escribir);
+
+// Filtros Portafolio
+const filterBar = document.getElementById('portfolio-filters');
+const cards = document.querySelectorAll('.p-card');
+
+if (filterBar) {
+  filterBar.addEventListener('click', (e) => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+
+    // activar botón
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.dataset.filter;
+
+    cards.forEach(card => {
+      const cat = card.dataset.category;
+
+      if (filter === 'all' || cat === filter) {
+        card.classList.remove('is-hidden');
+        card.classList.add('is-show');
+        setTimeout(() => card.classList.remove('is-show'), 260);
+      } else {
+        card.classList.add('is-hidden');
+      }
+    });
+  });
+}
+
