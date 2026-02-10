@@ -1,64 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impaqta Mexico</title>
-  <link rel="icon" type="image/png" href="/Logos/Whats/logoweb.png">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/navbar.css">
+  <title>IMPAQTA - Consultoría Ambiental</title>
 
-  <style>
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+  <!-- Tipografía elegante -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
 
-</head >
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- Ícono del navegador -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
 <body>
 
-  <header class="navbar"  >
-  <div class="nav-container">
-    <div class="nav-logo">
-      <a href="index.html"><img src="./Logos/PNG/Recurso 6.png" alt="IMPAQTA" /></a>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="Logos/Whats/logoweb.png" alt="IMPAQTA">
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav class="nav-links" id="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#portafolio">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav-links" id="nav-links">
-      <a href="index.html">Inicio</a>
-      <a href="#quienes">Nosotros</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#portafolio">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-
-    <div class="hamburger" id="hamburger">&#9776;</div>
-  </div>
-</header>
-
+  <!-- HERO / INICIO -->
   <section class="hero-apple" id="inicio">
-  <div class="hero-overlay">
-    <img src="./Logos/PNG/Recurso 1.png" alt="IMPAQTA Logo" class="hero-logo">
-    <h1>Consultoría Ambiental de Alto Impacto</h1>
- <! -- Texto animado-- >
-    <p id="typewriter-text"></p>
+    <div class="hero-overlay">
+      <img src="Logos/Whats/whats.png" alt="IMPAQTA Logo" class="hero-logo">
+      <h1>Consultoría Ambiental de Alto Impacto</h1>
+      <p id="typewriter-text"></p>
+      <a href="#contacto" class="btn-apple">Solicita tu asesoría</a>
+    </div>
+  </section>
 
-    <a href="#contacto" class="btn-apple">Solicita tu asesoría</a>
-  </div>
-</section>
+  <section class="about" id="quienes">
+    <div class="container">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <div class="about-content">
+        <p>
+          “Transformamos la normatividad ambiental en valor estratégico para su proyecto”
+          Somos una firma mexicana especializada en consultoría e ingeniería ambiental,
+          enfocada en brindar soluciones integrales para proyectos de gran escala. Nos
+          distingue una visión estratégica que combina el rigor técnico, el compromiso ético
+          y la sostenibilidad operativa, siempre alineada con el cumplimiento normativo y la
+          viabilidad económica.
+          Nuestra participación en obras de alto impacto, como el Tren Maya, nos posiciona
+          como un aliado confiable para proyectos que requieren gestión ambiental eficiente,
+          mitigación efectiva de impactos y uso responsable de los recursos naturales.
+          Contamos con un equipo multidisciplinario altamente capacitado, que opera bajo
+          estándares de calidad, legalidad y responsabilidad social, asegurando que cada
+          proyecto avance con certeza técnica y enfoque sostenible.
+          En IMPAQTA creemos en un futuro en el que el desarrollo y la conservación se
+          complementan, y trabajamos con conocimiento, visión y compromiso para hacerlo
+          posible
+        </p>
+        <img src="Logos/PERFIL/Sin título-1-05.jpg" alt="Consultoría Ambiental">
+      </div>
+    </div>
+  </section>
+
+  <section class="valores">
+    <div class="container">
+      <div class="valores-grid">
+        <div class="valor-card">
+          <h3>Misión</h3>
+          <p>
+            Impulsar proyectos de gran escala mediante soluciones
+            integrales de consultoría e ingeniería ambiental, que
+            aseguren su cumplimiento normativo, viabilidad económica
+            y
+            sostenibilidad, a través de asesoría especializada,
+            diagnósticos precisos y resultados eficientes promoviendo
+            un desarrollo responsable y ambientalmente viable.
+          </p>
+        </div>
+        <div class="valor-card">
+          <h3>Visión</h3>
+          <p>
+            Consolidarnos como la consultora ambiental líder en México,
+            reconocida por su excelencia técnica, enfoque innovador y
+            compromiso con la sostenibilidad, siendo el socio
+            estratégico preferido en los proyectos de inversión más
+            relevantes del país.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <svg id="mia" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+            stroke="#0d3b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3h18v18H3z" />
+            <path d="M8 8h8v8H8z" />
+          </svg>
+          <h3>MIA</h3>
+          <p>Evaluamos impacto ambiental conforme a normativas vigentes (LGEEPA).</p>
+        </div>
+        <div class="servicio-card">
+          <svg id="dron" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+            stroke="#0d3b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="2" />
+            <path d="M2 12h4M18 12h4M12 2v4M12 18v4" />
+            <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83" />
+            <path d="M19.07 4.93l-2.83 2.83M7.76 16.24l-2.83 2.83" />
+          </svg>
+          <h3>Fotogrametría</h3>
+          <p>Levantamiento con drones, modelos 3D, mapas y análisis espacial.</p>
+        </div>
+        <div class="servicio-card">
+          <svg id="hidrologico" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+            fill="none" stroke="#0d3b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C12 2 7 8 7 12a5 5 0 0 0 10 0c0-4-5-10-5-10z" />
+          </svg>
+          <h3>Estudios Hidrológicos</h3>
+          <p>Zonas de riesgo, cuencas, caudales y simulación hidráulica.</p>
+        </div>
+        <div class="servicio-card">
+          <svg id="forestal" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+            stroke="#0d3b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l2 7h-4l2-7z" />
+            <path d="M5 21h14M12 9v12" />
+          </svg>
+          <h3>Servicios Forestales</h3>
+          <p>Inventarios, reforestación, ETJ y aprovechamiento maderable.</p>
+        </div>
+        <div class="servicio-card">
+          <svg id="ordenamiento" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+            fill="none" stroke="#0d3b1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
+          <h3>Ordenamiento Territorial</h3>
+          <p>Diagnóstico y planeación del uso de suelo alineado a planes oficiales.</p>
+        </div>
+        <div class="servicio-card">
+          <img src="img/ecotecnias.svg" alt="Ecotecnias">
+          <h3>Soluciones Ambientales</h3>
+          <p>Biodigestores, baños secos, manejo de aguas residuales, huertos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-  <section class="mission">...</section>
 
-  <section class="portfolio">...</section>
 
-  <section class="contact" id="contacto">...</section>
-
-  <footer>
-
-  </footer>
-
-  <script src="/js/main.js"></script>
-  <script src="/js/escriture.js"></script>
-  
+  <!-- SCRIPT -->
+  <script src="js/main.js"></script>
+  <script src="js/escriture.js"></script>
 </body>
+
 </html>

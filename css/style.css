@@ -65,6 +65,126 @@
   display: inline-block;
 }
 
+/*Nosotros*/
+
+.about {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+.section-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #0d3b1f;
+  margin-bottom: 40px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+}
+.about-content p {
+  flex: 1 1 300px;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: justify;
+}
+.about-content img {
+  flex: 1 1 300px;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/*valores*/
+
+.valores {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  justify-content: center;
+}
+.valor-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+.valor-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #0d3b1f;
+  margin-bottom: 15px;
+}
+.valor-card p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+/*Servicios*/
+
+
+.servicios {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+.servicios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.servicio-card {
+  background-color: #f9f9f9;
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+.servicio-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.servicio-card h3 {
+  color: #0d3b1f;
+  margin-bottom: 10px;
+}
+.servicio-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .servicio-card {
+    width: 90%;
+  }
+}
+
 /* Cursor animado */
 @keyframes blink-caret {
   0%, 100% { border-color: transparent; }
@@ -92,3 +212,33 @@
     padding: 10px 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .valores-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valor-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
