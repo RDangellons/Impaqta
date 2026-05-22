@@ -1,67 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- linea para cambiar el icono e la pagina del buscador -->
-    <link rel="icon" type="imge/png" href="assets/icons/logoweb.png" />
-    <link rel="stylesheet" href="css/coming.css" />
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
 
-    <title>Inicio de pagina</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <h3 class="title">Impaqta Consultoria Ambiental</h3>
-        <p>
-        En Construccion
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>IMPAQTA | Consultoría Ambiental</title>
+
+  <meta name="description" content="IMPAQTA Consultoría Ambiental ofrece soluciones estratégicas en ordenamiento ecológico, impacto ambiental, servicios forestales, cartografía SIG y gestión ambiental.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+
+      <a href="index.html" class="logo">
+        <img src="assets/logos/logo-impaqta.png" alt="IMPAQTA Consultoría Ambiental">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+
+  <div class="mobile-menu-head">
+    <span>MENU</span>
+    <small>Ambiental · Territorial · Forestal</small>
+  </div>
+
+  <a href="#inicio" class="active">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#contacto">Contacto</a>
+
+  <a href="#contacto" class="mobile-menu-btn">
+    Solicitar cotización
+  </a>
+
+</nav>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+
+
+    </div>
+  </header>
+
+  <!-- HERO PRINCIPAL -->
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <p class="hero-label">Consultoría Ambiental Especializada</p>
+
+        <h1>
+          Soluciones ambientales estratégicas para proyectos sostenibles
+        </h1>
+
+        <p class="hero-text">
+          Acompañamos a empresas, instituciones y desarrolladores en la gestión ambiental,
+          cumplimiento normativo, ordenamiento ecológico, impacto ambiental y análisis territorial.
         </p>
-        <div class="count-down">
-          <div class="box">
-            <h3 id="day">00</h3>
-            <span>Dias</span>
-          </div>
-          <div class="box">
-            <h3 id="hour">00</h3>
-            <span>Horas</span>
-          </div>
-          <div class="box">
-            <h3 id="minute">00</h3>
-            <span>Minutos</span>
-          </div>
-          <div class="box">
-            <h3 id="second">00</h3>
-            <span>Segundos</span>
-          </div>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">
+            Solicitar consultoría
+          </a>
+
+          <a href="#servicios" class="btn btn-secondary">
+            Ver servicios
+          </a>
         </div>
       </div>
-      <div class="image">
-        <img src="assets/img/build.png" alt=" imagen de construccion" />
-      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+<section class="services-section" id="servicios">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-label">Nuestros servicios</span>
+      <h2>Soluciones ambientales con enfoque técnico y estratégico</h2>
+      <p>
+        Brindamos acompañamiento especializado para proyectos públicos y privados,
+        integrando análisis ambiental, territorial, normativo y forestal.
+      </p>
     </div>
-    <script>
-      let countdate = new Date("junary 10, 2026 24:00:00").getTime();
-      function countDown() {
-        let now = new Date().getTime();
-        gap = countdate - now;
-        let second = 1000;
-        let minute = second * 60;
-        let hour = minute * 60;
-        let day = hour * 24;
-        let d = Math.floor(gap / day);
-        let h = Math.floor((gap % day) / hour);
-        let m = Math.floor((gap % hour) / minute);
-        let s = Math.floor((gap % minute) / second);
-        document.getElementById("day").innerText = d;
-        document.getElementById("hour").innerText = h;
-        document.getElementById("minute").innerText = m;
-        document.getElementById("second").innerText = s;
-      }
-      setInterval(function () {
-        countDown();
-      }, 1000);
-    </script>
-  </body>
+
+   <div class="services-grid">
+
+  <article class="service-card">
+    <div class="service-image">
+      <img src="assets/img/services/prueba.png" alt="Ordenamiento Ecológico Local">
+    </div>
+    <span class="service-number">01</span>
+    <h3>Ordenamiento Ecológico Local</h3>
+    <p>
+      Elaboración, actualización y acompañamiento técnico en instrumentos de planeación ambiental territorial.
+    </p>
+    <ul>
+      <li>Diagnóstico ambiental</li>
+      <li>Caracterización territorial</li>
+      <li>Unidades de gestión ambiental</li>
+    </ul>
+  </article>
+
+  <article class="service-card featured">
+    <div class="service-image">
+      <img src="assets/img/services/impacto-ambiental.jpg" alt="Evaluación de Impacto Ambiental">
+    </div>
+    <span class="service-number">02</span>
+    <h3>Evaluación de Impacto Ambiental</h3>
+    <p>
+      Desarrollo de estudios y gestión de autorizaciones ambientales para proyectos de infraestructura y desarrollo.
+    </p>
+    <ul>
+      <li>Manifestaciones de Impacto Ambiental</li>
+      <li>Estudios técnicos justificativos</li>
+      <li>Gestión ante autoridades</li>
+    </ul>
+  </article>
+
+  <article class="service-card">
+    <div class="service-image">
+      <img src="assets/img/services/cartografia-sig.jpg" alt="Cartografía y Sistemas de Información Geográfica">
+    </div>
+    <span class="service-number">03</span>
+    <h3>Cartografía y Sistemas de Información Geográfica</h3>
+    <p>
+      Generación de cartografía temática, análisis espacial y representación territorial para la toma de decisiones.
+    </p>
+    <ul>
+      <li>Mapas técnicos</li>
+      <li>Análisis geoespacial</li>
+      <li>Modelos territoriales</li>
+    </ul>
+  </article>
+
+  <article class="service-card">
+    <div class="service-image">
+      <img src="assets/img/services/servicios-forestales.jpg" alt="Servicios Forestales">
+    </div>
+    <span class="service-number">04</span>
+    <h3>Servicios Forestales</h3>
+    <p>
+      Asesoría técnica para el manejo, conservación, cambio de uso de suelo y regularización forestal.
+    </p>
+    <ul>
+      <li>Inventarios forestales</li>
+      <li>Cambio de uso de suelo</li>
+      <li>Programas de manejo</li>
+    </ul>
+  </article>
+
+  <article class="service-card">
+    <div class="service-image">
+      <img src="assets/img/services/gestion-ambiental.jpg" alt="Gestión Ambiental Empresarial">
+    </div>
+    <span class="service-number">05</span>
+    <h3>Gestión Ambiental Empresarial</h3>
+    <p>
+      Diseño de estrategias ambientales para empresas que buscan cumplir la normativa y mejorar su desempeño.
+    </p>
+    <ul>
+      <li>Cumplimiento ambiental</li>
+      <li>Diagnósticos normativos</li>
+      <li>Planes de mejora</li>
+    </ul>
+  </article>
+
+  <article class="service-card">
+    <div class="service-image">
+      <img src="assets/img/services/bonos-carbono.jpg" alt="Bonos de Carbono y Sostenibilidad">
+    </div>
+    <span class="service-number">06</span>
+    <h3>Bonos de Carbono y Sostenibilidad</h3>
+    <p>
+      Acompañamiento en proyectos de mitigación, compensación ambiental y estrategias de sostenibilidad.
+    </p>
+    <ul>
+      <li>Captura de carbono</li>
+      <li>Proyectos sostenibles</li>
+      <li>Compensación ambiental</li>
+    </ul>
+  </article>
+
+</div>
+
+  </div>
+</section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
