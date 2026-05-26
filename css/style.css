@@ -305,6 +305,10 @@ button {
   transform: translateY(-3px);
 }
 
+
+
+
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */
@@ -733,6 +737,7 @@ button {
 
 /* IMAGEN DE CADA SERVICIO */
 .service-image {
+  position: relative;
   width: 100%;
   height: 200px;
   margin-bottom: 22px;
@@ -747,8 +752,63 @@ button {
   transition: transform 0.45s ease;
 }
 
+/* Capa oscura elegante sobre la imagen */
+.service-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0.12) 45%,
+    rgba(0, 63, 45, 0.58) 100%
+  );
+  pointer-events: none;
+}
+
+/* Etiqueta flotante */
+.service-tag {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+
+  color: var(--blanco);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Puntito decorativo */
+.service-tag::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #8ff1c7;
+  box-shadow: 0 0 8px rgba(143, 241, 199, 0.8);
+}
+
 .service-card:hover .service-image img {
   transform: scale(1.08);
+}
+
+.service-card:hover .service-tag {
+  transform: translateY(-2px);
+  transition: var(--transicion);
 }
 
 /* TARJETA DESTACADA */
@@ -782,6 +842,251 @@ button {
   background: var(--blanco);
 }
 
+
+/* =====================================================
+   SECCIÓN NOSOTROS
+===================================================== */
+
+.about-section {
+  position: relative;
+  padding: 115px 0;
+  background: var(--blanco);
+  overflow: hidden;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.about-content h2 {
+  margin-bottom: 22px;
+  color: var(--verde-oscuro);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+  color: var(--gris);
+  font-size: 1rem;
+}
+
+/* BLOQUES DE CONFIANZA */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.highlight-item {
+  padding: 22px 18px;
+  border-radius: 20px;
+  background: var(--verde-suave);
+  border: 1px solid rgba(0, 143, 99, 0.12);
+}
+
+.highlight-item strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--verde-principal);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.highlight-item span {
+  display: block;
+  color: var(--verde-oscuro);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* IMAGEN NOSOTROS */
+.about-image-wrap {
+  position: relative;
+}
+
+.about-image {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 34px;
+  box-shadow: var(--sombra-media);
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 63, 45, 0.05) 0%,
+    rgba(0, 63, 45, 0.22) 100%
+  );
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+/* TARJETA FLOTANTE */
+.about-card-floating {
+  position: absolute;
+  left: -28px;
+  bottom: 36px;
+
+  max-width: 280px;
+  padding: 24px 26px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 143, 99, 0.14);
+  box-shadow: var(--sombra-media);
+}
+
+.about-card-floating strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--verde-principal);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.about-card-floating span {
+  display: block;
+  color: var(--verde-oscuro);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* MISIÓN, VISIÓN Y ENFOQUE */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-top: 80px;
+}
+
+.mv-card {
+  position: relative;
+  padding: 34px 30px;
+  min-height: 260px;
+
+  border-radius: 26px;
+  background: linear-gradient(180deg, var(--verde-suave), var(--blanco));
+  border: 1px solid rgba(0, 143, 99, 0.13);
+  box-shadow: var(--sombra-suave);
+
+  transition: var(--transicion);
+}
+
+.mv-card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--sombra-media);
+}
+
+.mv-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+
+  border-radius: 18px;
+  background: var(--verde-principal);
+  color: var(--blanco);
+
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.mv-card h3 {
+  margin-bottom: 14px;
+  color: var(--verde-oscuro);
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.mv-card p {
+  color: var(--gris);
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE NOSOTROS */
+@media (max-width: 1000px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-image {
+    min-height: 430px;
+  }
+
+  .about-image img {
+    min-height: 430px;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    min-height: 330px;
+    border-radius: 24px;
+  }
+
+  .about-image img {
+    min-height: 330px;
+  }
+
+  .about-card-floating {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin-top: -42px;
+    margin-left: 18px;
+    margin-right: 18px;
+    max-width: none;
+  }
+
+  .mission-vision-grid {
+    margin-top: 56px;
+    gap: 20px;
+  }
+
+  .mv-card {
+    min-height: auto;
+    padding: 28px 24px;
+    border-radius: 22px;
+  }
+}
+
+
+
+
 /* RESPONSIVE SERVICIOS */
 @media (max-width: 1000px) {
   .services-grid {
@@ -811,4 +1116,13 @@ button {
   height: 190px;
   border-radius: 18px;
 }
+.service-tag {
+  left: 14px;
+  bottom: 14px;
+  font-size: 0.74rem;
+  padding: 7px 12px;
 }
+
+
+}
+
