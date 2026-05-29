@@ -253,18 +253,45 @@
         </div>
       </div>
 
-      <div class="about-image-wrap">
-        <div class="about-image">
-          <img src="assets/img/nosotros-equipo.jpg" alt="Equipo de consultoría ambiental">
-        </div>
+     <div class="about-image-wrap">
 
-        <div class="about-card-floating">
-          <strong>IMPAQTA</strong>
-          <span>Consultoría Ambiental Especializada</span>
-        </div>
-      </div>
+  <div class="about-slider" id="aboutSlider">
 
+    <div class="about-slide active">
+      <img src="assets/equipo/team.jpg" alt="Equipo IMPAQTA en consultoría ambiental">
     </div>
+
+    <div class="about-slide">
+      <img src="assets/equipo/team.jpg" alt="Trabajo técnico ambiental en campo">
+    </div>
+
+    <div class="about-slide">
+      <img src="assets/equipo/team.jpg" alt="Equipo revisando cartografía ambiental">
+    </div>
+
+    <div class="about-slide">
+      <img src="" alt="Consultores ambientales en proyecto">
+    </div>
+
+    <div class="slider-controls">
+      <button type="button" class="slider-btn" id="prevSlide" aria-label="Foto anterior">
+        ‹
+      </button>
+
+      <button type="button" class="slider-btn" id="nextSlide" aria-label="Foto siguiente">
+        ›
+      </button>
+    </div>
+
+    <div class="slider-dots" id="sliderDots">
+      <button class="slider-dot active" type="button" aria-label="Foto 1"></button>
+      <button class="slider-dot" type="button" aria-label="Foto 2"></button>
+      <button class="slider-dot" type="button" aria-label="Foto 3"></button>
+      <button class="slider-dot" type="button" aria-label="Foto 4"></button>
+    </div>
+
+  </div>
+</div>
 
     <div class="mission-vision-grid">
 
@@ -300,7 +327,266 @@
   </div>
 </section>
 
+<!-- PROYECTOS / PORTAFOLIO -->
+<section class="portfolio-section" id="proyectos">
+  <div class="container">
+
+    <div class="section-heading portfolio-heading">
+      <span class="section-label">Portafolio</span>
+      <h2>Proyectos con visión ambiental, territorial y sostenible</h2>
+      <p>
+        Integramos experiencia técnica, análisis normativo y herramientas geoespaciales
+        para acompañar proyectos en distintas áreas de gestión ambiental.
+      </p>
+    </div>
+
+    <div class="portfolio-filters">
+      <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+      <button class="filter-btn" type="button" data-filter="ordenamiento">Ordenamiento ecológico</button>
+      <button class="filter-btn" type="button" data-filter="impacto">Impacto ambiental</button>
+      <button class="filter-btn" type="button" data-filter="sig">Cartografía SIG</button>
+      <button class="filter-btn" type="button" data-filter="forestal">Servicios forestales</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <article class="portfolio-card" data-category="ordenamiento">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-ordenamiento.jpg" alt="Proyecto de ordenamiento ecológico local">
+          <span class="portfolio-category">Ordenamiento ecológico</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Ordenamiento Ecológico Local</h3>
+          <p>
+            Análisis territorial, diagnóstico ambiental y definición de criterios para la planeación ecológica municipal.
+          </p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="impacto">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-impacto.jpg" alt="Evaluación de impacto ambiental">
+          <span class="portfolio-category">Impacto ambiental</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Evaluación de Impacto Ambiental</h3>
+          <p>
+            Integración de estudios técnicos para identificar, prevenir y mitigar impactos ambientales de proyectos.
+          </p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="sig">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-sig.jpg" alt="Cartografía y análisis SIG">
+          <span class="portfolio-category">Cartografía SIG</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Cartografía y Análisis Geoespacial</h3>
+          <p>
+            Elaboración de mapas temáticos, análisis espacial y representación territorial para toma de decisiones.
+          </p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="forestal">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-forestal.jpg" alt="Servicios forestales">
+          <span class="portfolio-category">Servicios forestales</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Gestión Forestal</h3>
+          <p>
+            Levantamientos técnicos, inventarios forestales y acompañamiento para trámites de carácter forestal.
+          </p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="impacto">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-industrial.jpg" alt="Gestión ambiental empresarial">
+          <span class="portfolio-category">Gestión ambiental</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Regularización Ambiental Empresarial</h3>
+          <p>
+            Diagnóstico de cumplimiento, identificación de obligaciones ambientales y estrategias de mejora.
+          </p>
+        </div>
+      </article>
+
+      <article class="portfolio-card" data-category="ordenamiento">
+        <div class="portfolio-image">
+          <img src="assets/img/proyectos/proyecto-territorial.jpg" alt="Análisis territorial ambiental">
+          <span class="portfolio-category">Planeación territorial</span>
+        </div>
+
+        <div class="portfolio-content">
+          <h3>Análisis Territorial Ambiental</h3>
+          <p>
+            Evaluación de variables ambientales, sociales y territoriales para proyectos con enfoque sostenible.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact-section" id="contacto">
+  <div class="container">
+
+    <div class="contact-layout">
+
+      <div class="contact-info">
+        <span class="section-label">Contacto</span>
+
+        <h2>
+          Hablemos de tu proyecto ambiental
+        </h2>
+
+        <p>
+          Cuéntanos qué necesitas y nuestro equipo te orientará sobre el servicio
+          adecuado para tu proyecto, trámite o estrategia ambiental.
+        </p>
+
+        <div class="contact-cards">
+
+          <div class="contact-card">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Ubicación</strong>
+              <p>Pachuca, Hidalgo, México</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Correo electrónico</strong>
+              <p>contacto@impaqta.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Atención</strong>
+              <p>Solicita información por WhatsApp</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+
+          <h3>Solicitar consultoría</h3>
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="empresa">Empresa o institución</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Ordenamiento Ecológico Local">Ordenamiento Ecológico Local</option>
+              <option value="Evaluación de Impacto Ambiental">Evaluación de Impacto Ambiental</option>
+              <option value="Cartografía y SIG">Cartografía y SIG</option>
+              <option value="Servicios Forestales">Servicios Forestales</option>
+              <option value="Gestión Ambiental Empresarial">Gestión Ambiental Empresarial</option>
+              <option value="Bonos de Carbono y Sostenibilidad">Bonos de Carbono y Sostenibilidad</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos brevemente qué necesitas" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-btn">
+            Enviar por WhatsApp
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="footer-logo">
+          IMPAQTA
+        </a>
+
+        <p>
+          Consultoría ambiental estratégica especializada en gestión territorial,
+          impacto ambiental, servicios forestales, cartografía SIG y sostenibilidad.
+        </p>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">Fb</a>
+          <a href="#" aria-label="Instagram">Ig</a>
+          <a href="#" aria-label="LinkedIn">In</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Navegación</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contacto</h3>
+        <p>Pachuca, Hidalgo, México</p>
+        <p>contacto@impaqta.com</p>
+        <p>Atención por WhatsApp</p>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="currentYear"></span> IMPAQTA Consultoría Ambiental. Todos los derechos reservados.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
   </main>
+  <a href="https://wa.me/5217715261084" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+  WhatsApp
+</a>
 
   <script src="js/main.js"></script>
 </body>
